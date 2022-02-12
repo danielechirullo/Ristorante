@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: beige;
+   color: black;
+  font-size: medium;
+   font-family: 'open sans',sans-serif;
+    padding: 0 30px;
+  background-image: url('/img/fotoristorante.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+header,main,footer{
+    width: 100%;
+}
+/*Modifico la posizione del titolo*/
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+
+}
+   /*Modifichiamo il titolo*/
+   header > h1{
+    color: black;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: auto;
+}
+header > p1{
+    color: whitesmoke;
+    font-size: medium;
+    text-align: left;
+    margin-bottom: auto;
+}
+header >p{
+    color: whitesmoke;
+    font-size: medium;
+    text-align: left;
+    margin-bottom: auto;
+
+}
+div#numero-persone-w{
+    color: whitesmoke;
+    font-size: medium;
+    text-align: center;
+}
+/*Richiamo btn(ESSENDO BOTTONI) per modificare i pulsanti   */
+.btn{
+    background: none;
+    color: inherit;
+    padding: 4px 12px;
+    border: 1px;
+    color: black;
+}
+/*Modifico la posizione e la creazione di tabbelle contente i mumeri*/
+section#info-w{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+border: 1px solid rgb(104, 123, 136);
+    padding: 6px 0;
+    margin-bottom: 1px;
+
+}
+section#tavoli-w{
+display: flex;
+    flex-basis: 100%;
+    margin-bottom: auto;
+    justify-content: space-around;
+    background-color: rgb(26, 146, 226)
+}
+section#tavoli-w > div.tavolo{
+flex-grow: 1;
+    text-align: center;
+    margin: auto;
+   height: auto;
+    line-height: 60px;
+}
+/*Creo per i tavoli due colori differenti VERDE(LIBERO) e ROSSO(OCCUPPATO)*/
+section#tavoli-w > div.tavolo.libero{
+    background-color: rgb(34, 168, 16);
+}
+section#tavoli-w > div.tavolo.occupato{
+    background-color: rgb(209, 16, 16);
+}
+section#tavoli-w > div.tavolo:not(.occupato):hover{
+    transform: scale(1.1);
+}
+form > div.form-item{
+    margin: auto;
+}
