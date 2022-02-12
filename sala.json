@@ -1,0 +1,13 @@
+{
+  "numero-tavoli" : 8,
+  "tavoli" : [
+    {"posti" : 2, "occupato": false},
+    {"posti" : 2, "occupato": false},
+    {"posti" : 2, "occupato": true},
+    {"posti" : 4, "occupato": false},
+    {"posti" : 4, "occupato": false},
+    {"posti" : 4, "occupato": false},
+    {"posti" : 4, "occupato": false},
+    {"posti" : 4, "occupato": false}
+  ]
+}
