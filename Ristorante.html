@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Mobile</title>
+    <link rel="stylesheet" type="text/css" href="/css/Stile.css">
+</head>
+<body>
+
+<header>
+    <h1>BENVENUTI IN SAVI' </h1>
+    <p1>RESTAURANT SAVI' E' UN RISTORANTE CHE OFFRE PIATTI A BASE DI PESCE NEI QUALI POTRETE SENTIRE TUTTI I SAPORI TIPICI DELLA NOSTRA CUCINA ITALIANA, INOLTRE POTRETE DEGUSTARE ALTRE SPECIALITA' COME SUSHI O CRUDI.</p1>
+    
+    <p>LA NOSTRA STRUTTURA SARA' APERTA DAL MARTEDI' ALLA DOMENICA</p>
+</header>
+
+<main>
+    <section id="info-w">
+        <!--       INSERISCO LA LETTERA W PER INDICARE UN CONTENITORE-->
+        <div ID="numero-persone-w">
+            IL NOSTRO LOCALE OFFRE 8 TAVOLI OGNUNO DI ESSI CON UNA OTTIMA VISTA SUL MARE <span id="numero-persone"></span>
+            <!--CREO I PULSANTI PER INCREMENTARE(+) E DECREMENTARE(-) IL NUMERO DI PERSONE -->
+           <!-- <a href="#" id="sub" class="btn">-</a>-->
+          <!--  <a href="#" id="add" class="btn">+</a>-->
+        </div>
+        
+    </section>
+    <!--    CREO LA SEZIONE TAVOLI RISTORANTE-->
+    <section id="tavoli-w">
+           <div class="tavolo x2 libero">1</div>
+           <div class="tavolo x2 libero">2</div>
+           <div class="tavolo x2 occupato">3</div>
+           <div class="tavolo x2 libero">4</div>
+           <div class="tavolo x4 libero">5</div>
+           <div class="tavolo x4 libero">6</div>
+           <div class="tavolo x4 libero">7</div>
+           <div class="tavolo x4 libero">8</div>
+           </section>
+<!--        Paragrafo per lo stato della prenotazione&ndash-->
+        <p id="message-status"> </p>
+        <!--CREO IL FORM PER FAR INSERIRE IL NOME E L'EMAIL-->
+        <form action="/prenotazione" method="POST">
+            Nome e Cognome: <input type="text" name="name"  placeholder="Nome e Cognome" required><br>
+            Telefono: <input type="text" name="email" placeholder="Telefono" required><br>
+            Numero Persone: <input type="number" name="numero-persone" placeholder="indicare il numero di persone" required><br>
+           <button type="submit">PRENOTA</button>
+          </form>
+
+          <p3>PER MAGGIORI INFORMAZIONI PUOI CONTATTARCI AL NUMERO123456789</p3>
+          <p>OPPURE VIENICI A TROVARE PRESSO: CITTA'-CAP-INDIRIZZO </p>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
